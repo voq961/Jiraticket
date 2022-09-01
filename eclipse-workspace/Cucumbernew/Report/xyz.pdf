@@ -1,0 +1,7 @@
+
+Scenario: login functionality                 # Features/Login.feature:3
+  Given user is on loginpage                  # StepDefinition.LoginSteps.user_is_on_loginpage()
+  When user enter valid username and password # StepDefinition.LoginSteps.user_enter_valid_username_and_password()
+  And user click on loginButton               # StepDefinition.LoginSteps.user_click_on_login_button()
+  Then user moves on homepage                 # StepDefinition.LoginSteps.user_moves_on_homepage()
+  Then close browser                          # StepDefinition.LoginSteps.close_browser()
